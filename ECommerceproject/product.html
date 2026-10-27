@@ -1,0 +1,1240 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./assets/css/output.css" rel="stylesheet">
+     <link href="./assets/css/custom.css" rel="stylesheet" />
+     <link href="./assets/css/owl.carousel.min.css" rel="stylesheet">
+     <link href="./assets/css/owl.theme.default.min.css" rel="stylesheet">
+     <title>Product Details</title>
+</head>
+<body class="bg-[#F3F3F3]">
+       <!-- Hearder Section -->
+       <header class="w-full bg-[#008ECC] flex justify-center h-23 sm:h-23 md:h-23 lg:h-16 fixed top-0 z-50">
+          <div class="w-screen  max-w-[1120px]">
+               <div class="flex mt-2 sm:mt-2 md:mt-2 lg:mt-4">
+                    <div class="menu-bar float-left cursor-pointer text-white ml-3 m-0 mr-4 h-8 w-8 openNav">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="h-8 w-8">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                         </svg>
+                    </div>
+                    <!-- Side Menu Section -->
+                    <div class="menu-section bg-[rgba(0,0,0,.2)] z-[99] w-full h-full fixed left-0 top-0 duration-75 hidden">
+                         <div class="menu-sidebar bg-[#ececed] float-left w-[80%] sm:w-[80%] md:w-[80%] lg:w-[320px]  h-full  overflow-y-auto relative z-50">
+                                   <div class="menu-header bg-[#008ECC] h-16 sm:h-16 md:h-16 lg:h-16">
+                                        <div class="flex justify-between px-3">
+                                             <div class="flex justify-center items-center mt-4">
+                                                  <div class="close text-white text-2xl cursor-pointer closeNav">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                            class="w-6 h-6">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"  d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                                       </svg>
+                                                  </div>
+                                                  <div class="ml-1 text-white font-semibold">Hello</div>
+                                             </div>
+                                             <div class="profile text-[14px] flex justify-center items-center mt-4">
+                                                  <a href="login.html"
+                                                       class="text-white font-bold flex  border px-4 py-1 rounded-[40px] hover:border-[#000]">
+                                                       Sign In
+                                                  </a>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="menu-body">
+                                        <div class="menu-category bg-white pt-6 pb-8 px-4 mb-1">
+                                             <ul>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-2 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                                 class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                                                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                                            </svg>
+                                                            <span class="ml-2">Home</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                                 class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                                                      d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                                                            </svg>
+                                                            <span class="ml-2">Category</span>
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                             <div class=" font-semibold text-black text-sm mt-4 mb-3">My Account</div>
+                                             <ul>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-2 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                                 class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                                                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                                            </svg>
+                                                            <span class="ml-2">My Orders</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                            </svg>
+                                                            <span class="ml-2">My List</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                               </svg>
+                                                            <span class="ml-2">My Wishlist</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3" />
+                                                               </svg>
+                                                            <span class="ml-2">Wallet</span>
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                             <div class=" font-semibold text-black text-sm mt-4 mb-3">Help & Support</div>
+                                             <ul>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-2 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                                                               </svg>
+                                                            <span class="ml-2">FAQs/Need Help</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                                                               </svg>
+                                                            <span class="ml-2">About Us</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                                                               </svg>
+                                                            <span class="ml-2">Contact Us</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                                                               </svg>
+                                                            <span class="ml-2">Guide</span>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#" class="text-gray-500 block border-b py-3 flex">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#008ECC]">
+                                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                                                               </svg>
+                                                            <span class="ml-2">Caution Notice</span>
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                        </div>
+     
+                                       
+                                   </div>
+                         </div>
+                    </div>
+                    <!-- Logo  -->
+                    <div class="logo flex justify-center mr-10">
+                         <a href="index.html" class="max-w-full text-white font-bold text-[22px]">
+                               FlipShop
+                         </a>
+                    </div>
+                    <!-- Search -->
+                    <div
+                         class="search-container w-[55%] h-9 mr-10 rounded bg-white hidden md:hidden sm:hidden lg:block">
+                         <div class="search-box h-10 flex">
+                              <form action="" class="p-1 pl-5 w-[95%]">
+                                   <input type="text"
+                                        class="w-full p-0 border-none border-transparent focus:border-transparent focus:ring-0"
+                                        placeholder="Search essentials, groceries, and more …">
+                              </form>
+                              <div class="search-list w-6 h-6 mt-1.5"></div>
+                         </div>
+                    </div>
+                    <!-- Login -->
+                    <div class="login mt-1 mr-2 sm:mr-3 md:mr-3 lg:mr-8">
+                         <a href="login.html" class="text-sm text-white flex">
+                              <span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                             d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                             clip-rule="evenodd" />
+                                   </svg></span>
+                              <span class="hidden md:hidden sm:hidden lg:block  ml-2 mt-[2px]">Sign in / Sign up</span>
+                         </a>
+                    </div>
+                    <!-- Cart -->
+                    <div class="cart mt-[5px]">
+                         <a href="cart.html" class="text-sm pl-2 text-white flex">
+                              <span class="mr-3 sm:mr-3 md:mr-5 lg:mr-3">
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                             d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                   </svg>
+                              </span>
+                              <span class="hidden md:hidden sm:hidden lg:block  mt-[1px]">Cart</span>
+                         </a>
+                    </div>
+               </div>
+               <!-- Mobile Search Section -->
+               <div
+                    class="mobile-search-container w-[95%] m-auto h-8 mt-1 rounded bg-white block md:block sm:block lg:hidden">
+                    <div class="search-box h-10 flex">
+                         <form action="" class="p-1 pl-5 w-full">
+                              <input type="text"
+                                   class="w-full border-transparent focus:border-transparent focus:ring-0 border-none p-0"
+                                   placeholder="Search essentials, groceries, and more …">
+                         </form>
+                         <div class="search-list mr-2 w-6 h-6 mt-1.5"></div>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <!-- Menu Section -->
+     <div class="w-full bg-[#0c5273ef] fixed top-[64px] z-10 hidden sm:hidden md:hidden lg:block">
+          <nav class="max-w-[1100px] m-auto">
+               <ul class="flex">
+                   <li class="relative parent-menu">
+                    <a href="fliter.html" class="text-white font-semibold text-[14px] pr-4 py-2 block">Groceries</a>
+                    <div class="child-menu">
+                         <div class="absolute top-[37px]">
+                              <ul class="max-w-[250px] min-w-[250px] bg-[#fff] p-[8px] shadow rounded-b-[6px]">
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Fruits</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Dairy</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Bakery</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Personal Care</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                  </li>
+                  <li class="relative parent-menu">
+                    <a href="fliter.html" class="text-white font-semibold text-[14px] px-4 py-2 block">Home & Kitchen</a>
+                    <div class="child-menu">
+                         <div class="absolute top-[37px]">
+                              <ul class="max-w-[250px] min-w-[250px] bg-[#fff] p-[8px] shadow rounded-b-[6px]">
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Kitchenware</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Furniture</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Tableware</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Home Decor</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                   </li>
+                   <li class="relative parent-menu">
+                    <a href="fliter.html" class="text-white font-semibold text-[14px] px-4 py-2 block">Fashion</a>
+                    <div class="child-menu">
+                         <div class="absolute top-[37px]">
+                              <ul class="max-w-[250px] min-w-[250px] bg-[#fff] p-[8px] shadow rounded-b-[6px]">
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Men</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Women</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Boy</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Girl</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    </li>
+                    <li class="relative parent-menu">
+                    <a href="fliter.html" class="text-white font-semibold text-[14px] px-4 py-2 block">Electronics</a>
+                    <div class="child-menu">
+                         <div class="absolute top-[37px]">
+                              <ul class="max-w-[250px] min-w-[250px] bg-[#fff] p-[8px] shadow rounded-b-[6px]">
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Mobiles</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Tablets</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Laptop</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Desktop</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    </li>
+                    <li class="relative parent-menu">
+                    <a href="fliter.html" class="text-white font-semibold text-[14px] px-4 py-2 block">Beauty</a>
+                    <div class="child-menu">
+                         <div class="absolute top-[37px]">
+                              <ul class="max-w-[250px] min-w-[250px] bg-[#fff] p-[8px] shadow rounded-b-[6px]">
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Make-Up</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Hair</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Skin Care</a></li>
+                                   <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Fragrances</a></li>
+                              </ul>
+                         </div>
+                    </div>
+                    </li>
+                    <li class="relative parent-menu">
+                         <a href="#" class="text-white font-semibold text-[14px] px-4 py-2 block">Pages</a>
+                         <div class="child-menu">
+                              <div class="absolute top-[37px]">
+                                   <ul class="max-w-[250px] min-w-[250px] bg-[#fff] p-[8px] shadow rounded-b-[6px]">
+                                        <li><a href="login.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Login/Signup Page</a></li>
+                                        <li><a href="verify.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">OTP Verify Page</a></li>
+                                        <li><a href="fliter.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Shop Page</a></li>
+                                        <li><a href="product.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Shop Single Page</a></li>
+                                        <li><a href="cart.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Cart Page</a></li>
+                                        <li><a href="checkout.html" class="py-2 px-1 block rounded hover:bg-gray-100 hover:text-black">Checkout Page</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </li>
+               </ul>
+         </nav>
+     </div>
+     <div class="product-section max-w-[1366px] m-auto mt-[70px] sm:mt-[70px] md:mt-[70px] lg:mt-[105px]">
+          <div class="block sm:block md:block lg:flex p-3 bg-white">
+               <div class="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[40%] relative sm:relative md:relative lg:sticky top-0 sm:top-0 md:top-0 lg:top-[64px] bottom-0 z-2 h-[100%] sm:h-[100%] md:h-[100%] lg:h-[100vh] ">
+                    <div class="flex sm:flex-col-reverse flex-col-reverse md:flex-col-reverse lg:flex-row mt-5 sm:mt-5 md:mt-5 lg:mt-0">
+                         <div id="thumbs" class="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[15%]">
+                              <ul class="border-0 sm:border-0 md:border-0 lg:border pt-1 pb-1 flex sm:flex md:flex lg:block">
+                                   <li class="w-[60px] h-[60px] mb-3 ml-0 sm:ml-0 md:ml-0 lg:ml-[8px]">
+                                        <a class="block p-1 border-2 border-blue-700 border-thumb"
+                                             href="./assets/image/1.jpeg" rel="./assets/image/1.jpeg"
+                                             data-image="./assets/image/1.jpeg"
+                                             data-zoom-image="./assets/image/1.jpeg">
+                                             <img src="./assets/image/1.jpeg" alt="1" class="w-[60px] h-[60px]" />
+                                        </a>
+                                   </li>
+
+                                   <li class="w-[60px] h-[60px] mb-3 ml-0 sm:ml-0 md:ml-0 lg:ml-[8px]">
+                                        <a class="block p-1" href="./assets/image/2.jpeg" rel="./assets/image/2.jpeg"
+                                             data-image="./assets/image/2.jpeg"
+                                             data-zoom-image="./assets/image/2.jpeg">
+                                             <img src="./assets/image/2.jpeg" alt="2"  class="w-[60px] h-[60px]" />
+                                        </a>
+                                   </li>
+                                   <li class="w-[60px] h-[60px] mb-3 ml-0 sm:ml-0 md:ml-0 lg:ml-[8px]">
+                                        <a class="block p-1" href="./assets/image/3.jpeg" rel="./assets/image/3.jpeg"
+                                             data-image="./assets/image/3.jpeg"
+                                             data-zoom-image="./assets/image/3.jpeg">
+                                             <img src="./assets/image/3.jpeg" alt="3"  class="w-[60px] h-[60px]" />
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[85%]">
+                                   <div id="bigpic" class="flex justify-center border">
+                                        <img src="./assets/image/1.jpeg" alt="1" id="zoom_01" class="w-[200px]  h-[300px] sm:w-[200px] md:w-[200px] lg:w-[285px] sm:h-[300px] md:h-[300px] lg:h-[528px]"
+                                        data-zoom-image="./assets/image/1.jpeg" />
+                                   </div>
+                               <div class="buy-btn-cart mt-2 bottom-0 bg-white sm:bg-white md:bg-white lg:bg-none z-50 sm:z-50 md:z-50 lg:z-0 sm:bottom-0 md:bottom-0 left-0 sm:left-0 md:left-0 right-0 sm:right-0 md:right-0 fixed sm:fixed md:fixed lg:relative">
+                                      <ul class="flex">
+                                           <li class="text-center w-[50%] mr-1">
+                                             <div class="flex space-x-2 justify-center">
+                                                  <a href="cart.html" class="w-full">
+                                                  <button type="button"  class="w-full flex justify-center px-6 py-[16px] bg-orange-500 text-white font-medium text-xs leading-tight uppercase rounded-[2px] shadow-md hover:bg-orange-500 hover:shadow-lg focus:bg-orange-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-600 active:shadow-lg transition duration-150 ease-in-out">
+                                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                       <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                                     </svg>
+                                                    <span class="mt-[2px] pl-1 text-[14px]">Add to Cart</span>
+                                                  </button>
+                                                </a>
+                                             </div>
+                                           </li>
+                                           <li class="text-center w-[50%] ">
+                                             <div class="flex space-x-2 justify-center">
+                                                     <a href="cart.html" class="w-full">
+                                                     <button type="button" class="w-full flex justify-center px-6 py-[16px] bg-amber-500 text-white font-medium text-xs leading-tight uppercase rounded-[2px] shadow-md hover:bg-amber-500 hover:shadow-lg focus:bg-amber-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-amber-600 active:shadow-lg transition duration-150 ease-in-out">
+                                                     
+                                                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                                                       </svg>
+                                                      <span class="mt-[2px] pl-1 text-[14px]">Buy Now</span>
+                                                    </button>
+                                                  </a>
+                                             </div>
+                                           </li>
+                                      </ul>
+                               </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[60%] pl-3  ">
+                    <div class="breadcrumbs hidden sm:hidden md:hidden lg:block">
+                         <ul class="flex text-[12px] text-[#878787]">
+                              <li class="home pr-2 flex"> <a href="#" title="Go to Home"> Home </a> 
+                                   <svg class="rotate-[270deg] text-[#878787]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0H24V24H0z"/>
+                                            <path d="M0 0H24V24H0z"/>
+                                            <path fill="#000" fill-opacity=".5" d="M17.28 10.22c-.293-.293-.768-.293-1.06 0l-4.228 4.224-4.213-4.212c-.292-.293-.767-.293-1.06 0-.292.292-.292.767 0 1.06l4.743 4.742c.147.148.337.22.53.22.192 0 .385-.072.53-.22l4.757-4.757c.295-.29.295-.765 0-1.058z"/>
+                                        </g>
+                                    </svg>
+                              </li>
+                              <li class="home pr-2 flex"> <a href="#" title="Go to All Categories"> All Categories</a>
+                                   <svg class="rotate-[270deg] text-[#878787]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0H24V24H0z"/>
+                                            <path d="M0 0H24V24H0z"/>
+                                            <path fill="#000" fill-opacity=".5" d="M17.28 10.22c-.293-.293-.768-.293-1.06 0l-4.228 4.224-4.213-4.212c-.292-.293-.767-.293-1.06 0-.292.292-.292.767 0 1.06l4.743 4.742c.147.148.337.22.53.22.192 0 .385-.072.53-.22l4.757-4.757c.295-.29.295-.765 0-1.058z"/>
+                                        </g>
+                                    </svg>
+                              </li>
+                              <li class="home pr-2 flex"><span>Typographic Print Crew-Neck T-shirt</span></li>
+                         </ul>
+                    </div>
+                    <div class="product-title mt-2">
+                         <h1>
+                              <span class="text-[18px]">Full Sleeve Printed Men Sweatshirt</span>
+                              <span class="table text-[#878787]">TRIPR</span>
+                         </h1>
+                    </div>
+                    <div class="price mt-1">
+                         <div class="text-[28px] text-[#212121]">
+                              <span>&#8377;499</span>
+                              <span class="text-[#878787] text-[16px] ml-1"><strike>&#8377;399.00</strike></span>
+                              <span class="text-[15px] text-[#26a541] font-semibold ml-1">80% off</span>
+                         </div>
+                    </div>
+                    <div class="rating mt-1 goToRating cursor-pointer table">
+                         
+                              <span class="bg-[#26a541] text-[14px] font-semibold text-white pt-1 pl-2 pr-2 pb-1 rounded-[14px]">4.8</span>
+                              <span class=" font-semibold text-[14px] text-[#878787] ml-2">43 ratings and 42 reviews</span>
+                      
+                    </div>
+                    <div class="offer mt-2">
+                         <span class="text-[#212121] text-[16px] font-semibold">Available offers</span>
+                         <ul class="mt-2">
+                              <li class="flex text-[14px] mb-1"><span class="mr-3"><img src="./assets/image/offer.png"
+                                             alt="offer" width="18" height="18"></span><span>Get extra 15% off (price
+                                        inclusive of discount</span></li>
+                              <li class="flex text-[14px] mb-1"><span class="mr-3"><img src="./assets/image/offer.png"
+                                             alt="offer" width="18" height="18"></span><span>Get extra 15% off (price
+                                        inclusive of discount</span></li>
+                              <li class="flex text-[14px] mb-1"><span class="mr-3"><img src="./assets/image/offer.png"
+                                             alt="offer" width="18" height="18"></span><span>Get extra 15% off (price
+                                        inclusive of discount</span></li>
+                         </ul>
+                    </div>
+                    <div class="product-color mt-4">
+                         <span class="text-[16px] font-medium text-[#878787]">Color</span>
+                         <ul class="mt-2 flex">
+                              <li><a href="#" class="color-product-img mr-2 border-2 border-blue-600 block links-click"><img src="./assets/image/3.png" class="w-[50px] h-[50px]" alt="product-img"></a></li>
+                              <li><a href="#" class="color-product-img mr-2 border-2 block links-click"><img src="./assets/image/3.png" class="w-[50px] h-[50px]" alt="product-img"></a></li>
+                         </ul>
+
+                    </div>
+                    <div class="product-size mt-4">
+                         <span class="text-[16px] font-medium text-[#878787]">Size</span>
+                         <ul class="mt-2 flex">
+                              <li><a href="#"
+                                        class="mr-2 block border-blue-600 size-click pt-[6px] pb-[6px] pl-[10px] pr-[10px] rounded-[2px] min-w-[36px] border-2">S</a>
+                              </li>
+                              <li><a href="#"
+                                        class="mr-2 block size-click pt-[6px] pb-[6px] pl-[10px] pr-[10px] rounded-[2px] min-w-[36px] border-2">M</a>
+                              </li>
+                              <li><a href="#"
+                                        class="mr-2 block size-click pt-[6px] pb-[6px] pl-[10px] pr-[10px] rounded-[2px] min-w-[36px] border-2">L</a>
+                              </li>
+                         </ul>
+                    </div>
+
+                    <div class="product-details-section  border mt-5">
+                         <div class="flex justify-between border-b p-5">
+                              <div>
+                                   <p class="text-[24px] font-semibold">Product Details</p>
+                              </div>
+                              <div>
+                                   <div class="flex justify-center">
+                                       
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="show-product-details">
+                              <div class="border-b p-5">
+                                  <p class="text-[#212121] font-medium mb-4">General</p>
+                                  <div class="">
+                                   <table class="w-[100%]">
+                                        <tbody>
+                                        <tr>
+                                             <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                             <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                  <ul>
+                                                       <li>g70 LTE</li>
+                                                  </ul>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                             <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                  <ul>
+                                                       <li>g70 LTE</li>
+                                                  </ul>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                             <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                  <ul>
+                                                       <li>g70 LTE</li>
+                                                  </ul>
+                                             </td>
+                                        </tr>
+                                        </tbody>
+                                      </table>
+                                   </div>
+                              </div>
+                              <div class="more-details hidden">
+                                   <div class="border-b p-5">
+                                        <p class="text-[#212121] font-medium mb-4">Display Features</p>
+                                        <div class="">
+                                         <table class="w-[100%]">
+                                              <tbody>
+                                                  <tr>
+                                                       <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                                       <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                            <ul>
+                                                                 <li>g70 LTE</li>
+                                                            </ul>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                                       <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                            <ul>
+                                                                 <li>g70 LTE</li>
+                                                            </ul>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                                       <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                            <ul>
+                                                                 <li>g70 LTE</li>
+                                                            </ul>
+                                                       </td>
+                                                  </tr>
+                                              </tbody>
+                                            </table>
+                                         </div>
+                                    </div>
+                                    <div class="border-b p-5">
+                                        <p class="text-[#212121] font-medium mb-4">Os & Processor Features</p>
+                                        <div class="">
+                                         <table class="w-[100%]">
+                                              <tbody>
+                                                  <tr>
+                                                       <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                                       <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                            <ul>
+                                                                 <li>g70 LTE</li>
+                                                            </ul>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                                       <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                            <ul>
+                                                                 <li>g70 LTE</li>
+                                                            </ul>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td class="w-[35%] sm:w-[35%] md:w-[30%] lg:w-[25%] text-[14px] text-[#878787] pb-[12px]">Model Number</td>
+                                                       <td class="w-[65%] sm:w-[65%] md:w-[70%] lg:w-[75%] text-[14px] text-[#212121] pb-[12px]">
+                                                            <ul>
+                                                                 <li>g70 LTE</li>
+                                                            </ul>
+                                                       </td>
+                                                  </tr>
+                                              </tbody>
+                                            </table>
+                                         </div>
+                                    </div>
+                              </div>
+                              <div class="see-all-product-details p-5">
+                                    <button class="text-[16px] font-medium text-blue-600 onClickShow">Read more</button>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="rating-review-section  border mt-5">
+                         <div class="border-b p-5">
+                              <div class="block justify-between sm:block md:flex lg:flex">
+                                   <div>
+                                        <p class="text-[24px] font-semibold">Ratings & Reviews</p>
+                                   </div>
+                                   <div>
+                                        <div class="space-x-2 text-right mt-3 sm:mt-3 md:mt-3 lg:mt-0">
+                                             <button
+                                               type="button"
+                                               data-mdb-ripple="true"
+                                               data-mdb-ripple-color="light"
+                                               class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                                             >Rate Product</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="all-rating-review mt-4">
+                                   <div class="flex">
+                                         <div class="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[30%]">
+                                              <div class=" text-center">
+                                                  <span class="text-[25px]">4.8<span class="pl-1">★</span></span>
+                                                  <span class=" block text-[12px] text-[#878787] font-medium">
+                                                    753 Ratings 
+                                                  <br>&<br>
+                                                    172 Reviews
+                                                  </span>
+                                              </div>
+                                            
+                                         </div>
+                                         <div class="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[30%] pr-2">
+                                             <div class="flex w-[100%] h-[100%] flex-nowrap">
+                                                  <ul class="w-[10%]">
+                                                       <li class="text-[12px]">5<span class="pl-1">★</span></li>
+                                                       <li class="text-[12px]">4<span class="pl-1">★</span></li>
+                                                       <li class="text-[12px]">3<span class="pl-1">★</span></li>
+                                                       <li class="text-[12px]">2<span class="pl-1">★</span></li>
+                                                       <li class="text-[12px]">1<span class="pl-1">★</span></li>
+                                                  </ul>
+                                                  <ul class="w-[80%] mt-[5px] pl-3">
+                                                       <li class="mb-[11px]"> <div class="w-full bg-gray-200 h-[7px] rounded mb-2">
+                                                         <div class="bg-green-500 h-[7px] rounded" style="width: 25%"></div>
+                                                       </div>
+                                                     </li>
+                                                     <li class="mb-[11px]"> <div class="w-full bg-gray-200 h-[7px] rounded mb-2">
+                                                       <div class="bg-green-500 h-[7px] rounded" style="width: 25%"></div>
+                                                     </div>
+                                                     </li>
+                                                       <li class="mb-[11px]"> <div class="w-full bg-gray-200 h-[7px] rounded mb-2">
+                                                            <div class="bg-green-500 h-[7px] rounded" style="width: 25%"></div>
+                                                       </div>
+                                                       </li>
+                                                       <li class="mb-[11px]"> <div class="w-full bg-gray-200 h-[7px] rounded mb-2">
+                                                       <div class="bg-yellow-500 h-[7px] rounded" style="width: 25%"></div>
+                                                       </div>
+                                                       </li>
+                                                       <li> <div class="w-full bg-gray-200 h-[7px] rounded mb-2">
+                                                            <div class="bg-red-600 h-[7px] rounded" style="width: 25%"></div>
+                                                       </div>
+                                                       </li>
+                                                  </ul>
+                                                  <ul class="w-[10%] pl-4">
+                                                    <li class="text-[12px]">21</li>
+                                                    <li class="text-[12px]">1</li>
+                                                    <li class="text-[12px]">21</li>
+                                                    <li class="text-[12px]">1</li>
+                                                    <li class="text-[12px]">21</li>
+                                                 </ul>
+                                             </div>
+                                               
+                                         </div>
+                                   </div>
+                              </div>
+                         </div>
+                        
+                         <div class="show-rating-review">
+                              <div class="border-b p-5">
+                                   <div>
+                                        <span class="flex w-[40px] bg-[#26a541] text-[12px] font-semibold text-white pt-[1px] pl-2 pr-2 pb-[.5px] rounded-[4px]">4<span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                           </svg></span>
+                                        </span>
+                                      <p class="text-[13px] font-semibold text-[#878787] mt-2">Good looking wearing this shirt</p>
+                                       
+                                   </div>
+                                   <div class="flex justify-between mt-2">
+                                        <div>
+                                             <p class="text-[12px] block text-[#878787] font-medium">Anonymous</p>
+                                             <span class="text-[12px] text-[#878787] font-medium flex mt-1">
+                                                  <svg width="14" height="14" viewBox="0 0 12 12"
+                                                       xmlns="http://www.w3.org/2000/svg" class="_3V5JvW">
+                                                       <g>
+                                                            <circle cx="6" cy="6" r="6" fill="#878787"></circle>
+                                                            <path stroke="#FFF" stroke-width="1.5" d="M3 6l2 2 4-4"
+                                                                 fill="#878787"></path>
+                                                       </g>
+                                                  </svg>
+                                                  <span class="pl-2 -mt-[.5px]">Certified Buyer, <span>Gonda District</span></span>
+                                             </span>
+                                        </div>
+                                        <div class="flex mt-5">
+                                             <span class="like mr-5 cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                             <span class="dislike cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="border-b p-5">
+                                   <div>
+                                        <span class="flex w-[40px] bg-[#26a541] text-[12px] font-semibold text-white pt-[1px] pl-2 pr-2 pb-[.5px] rounded-[4px]">4<span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                           </svg></span>
+                                        </span>
+                                      <p class="text-[13px] font-semibold text-[#878787] mt-2">Good looking wearing this shirt</p>
+                                       
+                                   </div>
+                                   <div class="flex justify-between mt-2">
+                                        <div>
+                                             <p class="text-[12px] block text-[#878787] font-medium">Anonymous</p>
+                                             <span class="text-[12px] text-[#878787] font-medium flex mt-1">
+                                                  <svg width="14" height="14" viewBox="0 0 12 12"
+                                                       xmlns="http://www.w3.org/2000/svg" class="_3V5JvW">
+                                                       <g>
+                                                            <circle cx="6" cy="6" r="6" fill="#878787"></circle>
+                                                            <path stroke="#FFF" stroke-width="1.5" d="M3 6l2 2 4-4"
+                                                                 fill="#878787"></path>
+                                                       </g>
+                                                  </svg>
+                                                  <span class="pl-2 -mt-[.5px]">Certified Buyer, <span>Gonda District</span></span>
+                                             </span>
+                                        </div>
+                                        <div class="flex mt-5">
+                                             <span class="like mr-5 cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                             <span class="dislike cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="see-all-question p-5">
+                                   <a href="#" class="text-[14px] font-medium text-blue-600">All reviews</a>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="question-answer-section  border mt-5">
+                         <div class="block sm:block md:flex lg:flex justify-between border-b p-3 sm:p-3 md:p-3 lg:p-5">
+                              <div>
+                                   <p class="text-[24px] font-semibold">Questions and Answers</p>
+                              </div>
+                              <div class="mt-3 sm:mt-3 md:mt-3 lg:mt-0">
+                                   <div class="flex justify-center">
+                                        <div class="mb-3 xl:w-[200px]">
+                                             <div
+                                                  class="input-group relative flex flex-wrap items-stretch w-full border border-solid border-gray-300 rounded">
+                                                  <input type="search"
+                                                       class="form-control relative flex-auto min-w-0 block w-full px-3 py-[1px] text-base font-normal text-gray-700 bg-white bg-clip-padding transition ease-in-out m-0 border-none border-transparent focus:border-transparent focus:ring-0 focus:outline-none"
+                                                       placeholder="Search" aria-label="Search"
+                                                       aria-describedby="button-addon2">
+                                                  <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                                       data-icon="search" class="w-4 mr-2" role="img"
+                                                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                       <path fill="currentColor"
+                                                            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                                                       </path>
+                                                  </svg>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="show-question-answer">
+                              <div class="border-b p-5">
+                                   <div>
+                                        <p class="text-[16px] font-medium text-[#212121]"><span>Q: </span>Good looking
+                                             wearing this shirt</p>
+                                        <p class="text-[14px] font-medium"><span class="text-[#212121]">A: </span
+                                                  class="text-[#686767]">Yes</p>
+                                   </div>
+                                   <div class="flex justify-between mt-2">
+                                        <div>
+                                             <p class="text-[12px] block text-[#878787] font-medium">Anonymous</p>
+                                             <span class="text-[12px] text-[#878787] font-medium flex mt-1">
+                                                  <svg width="14" height="14" viewBox="0 0 12 12"
+                                                       xmlns="http://www.w3.org/2000/svg" class="_3V5JvW">
+                                                       <g>
+                                                            <circle cx="6" cy="6" r="6" fill="#878787"></circle>
+                                                            <path stroke="#FFF" stroke-width="1.5" d="M3 6l2 2 4-4"
+                                                                 fill="#878787"></path>
+                                                       </g>
+                                                  </svg>
+                                                  <span class="pl-2 -mt-[.5px]">Certified Buyer</span>
+                                             </span>
+                                        </div>
+                                        <div class="flex mt-5">
+                                             <span class="like mr-5 cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                             <span class="dislike cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="border-b p-5">
+                                   <div>
+                                        <p class="text-[16px] font-medium text-[#212121]"><span>Q: </span>Good looking
+                                             wearing this shirt</p>
+                                        <p class="text-[14px] font-medium"><span class="text-[#212121]">A: </span
+                                                  class="text-[#686767]">Yes</p>
+                                   </div>
+                                   <div class="flex justify-between mt-2">
+                                        <div>
+                                             <p class="text-[12px] block text-[#878787] font-medium">Anonymous</p>
+                                             <span class="text-[12px] text-[#878787] font-medium flex mt-1">
+                                                  <svg width="14" height="14" viewBox="0 0 12 12"
+                                                       xmlns="http://www.w3.org/2000/svg" class="_3V5JvW">
+                                                       <g>
+                                                            <circle cx="6" cy="6" r="6" fill="#878787"></circle>
+                                                            <path stroke="#FFF" stroke-width="1.5" d="M3 6l2 2 4-4"
+                                                                 fill="#878787"></path>
+                                                       </g>
+                                                  </svg>
+                                                  <span class="pl-2 -mt-[.5px]">Certified Buyer</span>
+                                             </span>
+                                        </div>
+                                        <div class="flex mt-5">
+                                             <span class="like mr-5 cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                             <span class="dislike cursor-pointer flex text-[#878787]">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                                       viewBox="0 0 24 24" stroke="currentColor">
+                                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5" />
+                                                  </svg>
+                                                  <span class="pl-1 text-[10px] mt-[1.5px]">212</span>
+                                             </span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="see-all-question p-5">
+                                   <a href="#" class="text-[14px] font-medium text-blue-600">All questions</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Similar Product -->
+
+          <div class="similar-product-section bg-white mt-5 p-5">
+               <div>
+                    <p class="text-[18px] font-bold text-[#212121]">Similar Products</p>
+               </div>
+               <div class="mt-5">
+                    <div class="similar-product-slider owl-carousel">
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                         <div class="item-card p-2 transition hover:shadow-md">
+                              <a href="product.html">
+                                   <img src="./assets/image/3.png" alt="t-shirt"
+                                        class="w-[100%] m-auto sm:w-[100%] md:w-[106px] lg:w-[180px]" />
+
+                                   <div class="item-card-body">
+                                        <p class="text-[14px] text-[#878787]">Jump Cuts</p>
+                                        <a href="#"
+                                             class="text-[14px] text-[#212121] truncate w-[80%] inline-block">Printed
+                                             Men Round Neck Dark Blue, Blue T-Shirt</a>
+                                        <div class="flex">
+                                             <p class="text-black font-medium p-0 text[16px] pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <p class="text-[#878787] p-0 text[14px] line-through pr-2">
+                                                  &#8377;52
+                                             </p>
+                                             <span class="text-[#388e3c] text-[13px] font-medium pt-[2px]">51%
+                                                  off</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- Footer -->
+     <footer class="bg-gray-200 mt-28">
+          <div class="footer max-w-[1120px] m-auto p-8">
+               <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+                    <div>
+                         <p class="text-black font-bold text-[15px]">All Categories</p>
+                         <ul class="mt-3 text-xs text-gray-600">
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Grocery</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Electronics</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Fashion</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Beauty</a></li>
+                         </ul>
+                    </div>
+                    <div>
+                         <p class="text-black font-bold text-[15px]">Popular Categories</p>
+                         <ul class="mt-3 text-xs text-gray-600">
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Staples</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Beverages</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Dairy & Bakery</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Snacks & Branded Foods</a></li>
+                         </ul>
+                    </div>
+                    <div>
+                         <p class="text-black font-bold text-[15px] mt-3 sm:mt-3 md:mt-3 lg:mt-0">Customer Account</p>
+                         <ul class="mt-3 text-xs text-gray-600">
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">My Account</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">My Orders</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Wishlist</a></li>
+                              <li><a href="#" class="py-2 text-[14px] block hover:bg-gray-300 hover:pl-1">Payment Methods</a></li>
+                         </ul>
+                    </div>
+                    <div>
+                         <p class="text-black font-bold text-[15px] mt-3 sm:mt-3 md:mt-3 lg:mt-0">Contact Us</p>
+                         <div class="footer_contact mt-3">
+                              <div class="flex text-[14px] text-gray-600">
+                                   <span class="icn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                   </span>
+                                  <div class="ml-2">
+                                   <p>Widgetify Inc. <br>Gadget Avenue Techtown <br>United States of America</p>
+                                  </div>
+                              </div>
+                              <div class="flex text-[14px] text-gray-600 py-2">
+                                   <span class="icn">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3545 22.2323C15.3344 21.7262 11.1989 20.2993 7.44976 16.5502C3.70065 12.8011 2.2738 8.66559 1.76767 6.6455C1.47681 5.48459 2.00058 4.36434 2.88869 3.72997L5.21694 2.06693C6.57922 1.09388 8.47432 1.42407 9.42724 2.80051L10.893 4.91776C11.5152 5.8165 11.3006 7.0483 10.4111 7.68365L9.24234 8.51849C9.41923 9.1951 9.96939 10.5846 11.6924 12.3076C13.4154 14.0306 14.8049 14.5807 15.4815 14.7576L16.3163 13.5888C16.9517 12.6994 18.1835 12.4847 19.0822 13.1069L21.1995 14.5727C22.5759 15.5257 22.9061 17.4207 21.933 18.783L20.27 21.1113C19.6356 21.9994 18.5154 22.5232 17.3545 22.2323ZM8.86397 15.136C12.2734 18.5454 16.0358 19.8401 17.8405 20.2923C18.1043 20.3583 18.4232 20.2558 18.6425 19.9488L20.3056 17.6205C20.6299 17.1665 20.5199 16.5348 20.061 16.2171L17.9438 14.7513L17.0479 16.0056C16.6818 16.5182 16.0047 16.9202 15.2163 16.7501C14.2323 16.5378 12.4133 15.8569 10.2782 13.7218C8.1431 11.5867 7.46219 9.7677 7.24987 8.7837C7.07977 7.9953 7.48181 7.31821 7.99439 6.95208L9.24864 6.05618L7.78285 3.93893C7.46521 3.48011 6.83351 3.37005 6.37942 3.6944L4.05117 5.35744C3.74413 5.57675 3.64162 5.89565 3.70771 6.15943C4.15989 7.96418 5.45459 11.7266 8.86397 15.136Z" fill="#0F0F0F"/>
+                                        </svg>
+                                   </span>
+                                  <div class="ml-2">
+                                   <p>(987) 654-3210, (555) 123-4567</p>
+                                  </div>
+                              </div>
+                              <div class="flex text-[14px] text-gray-600 py-2">
+                                   <span class="icn">
+                                   <?xml version="1.0" encoding="utf-8"?>
+                                   <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <rect x="3" y="5" width="18" height="14" rx="2" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                                   </svg>
+                                   </span>
+                                  <div class="ml-2">
+                                   <p>info@example.com</p>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+               </div>
+          </div>
+          <div class="copy-right text-center pb-3 pt-3 border-t border-gray-300">
+               <p class="text-[13px]">© 2022 All rights reserved.</p>
+          </div>
+     </footer>
+     <script src="./assets/js/jquery-3.6.0.min.js"></script>
+     <script src="./assets/js/jquery.elevatezoom.js"></script>
+     <script src="./assets/js/owl.carousel.min.js"></script>
+     <script src="./assets/js/main.js"></script>
+</body>
+</html>

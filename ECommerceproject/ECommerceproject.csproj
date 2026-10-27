@@ -1,0 +1,447 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7037C962-14AA-449C-8109-44F8157C0832}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECommerceproject</RootNamespace>
+    <AssemblyName>ECommerceproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminHome.aspx" />
+    <Content Include="AdminReg.aspx" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\easyzoom.css" />
+    <Content Include="assets\css\output.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\image\1.jpeg" />
+    <Content Include="assets\image\2.jpeg" />
+    <Content Include="assets\image\2.png" />
+    <Content Include="assets\image\3.jpeg" />
+    <Content Include="assets\image\3.png" />
+    <Content Include="assets\image\4.png" />
+    <Content Include="assets\image\5.png" />
+    <Content Include="assets\image\6.png" />
+    <Content Include="assets\image\7.png" />
+    <Content Include="assets\image\cart.svg" />
+    <Content Include="assets\image\chevron-down.svg" />
+    <Content Include="assets\image\filter.svg" />
+    <Content Include="assets\image\isolated-t-shirt.png" />
+    <Content Include="assets\image\list-view.svg" />
+    <Content Include="assets\image\logo.svg" />
+    <Content Include="assets\image\menu.svg" />
+    <Content Include="assets\image\mobile.jpeg" />
+    <Content Include="assets\image\my-account.svg" />
+    <Content Include="assets\image\offer.png" />
+    <Content Include="assets\image\p4.png" />
+    <Content Include="assets\image\profile.svg" />
+    <Content Include="assets\image\search.svg" />
+    <Content Include="assets\image\slider1.jpg" />
+    <Content Include="assets\image\slider2.jpg" />
+    <Content Include="assets\image\slider3.jpg" />
+    <Content Include="assets\image\star.svg" />
+    <Content Include="assets\image\t-shirt.jpeg" />
+    <Content Include="assets\image\t-shirt.png" />
+    <Content Include="assets\image\t-shirt1.png" />
+    <Content Include="assets\js\jquery-3.6.0.min.js" />
+    <Content Include="assets\js\jquery.elevatezoom.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="cart.aspx" />
+    <Content Include="cart.html" />
+    <Content Include="Category.aspx" />
+    <Content Include="Checkout.aspx" />
+    <Content Include="checkout.html" />
+    <Content Include="Contactus.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="Filter.aspx" />
+    <Content Include="fliter.html" />
+    <Content Include="index.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="log.html" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="product.html" />
+    <Content Include="ProductDetails.aspx" />
+    <Content Include="ProductPhotos\-original-.png" />
+    <Content Include="ProductPhotos\42-cmss29232-r6-colorplus-original.png" />
+    <Content Include="ProductPhotos\placeholder.jpg" />
+    <Content Include="ProductPhotos\The Indian Garage Co. Men Checkered Casual Pink Shirt - Buy The Indian Garage Co. Men Checkered Casual Pink.png" />
+    <Content Include="ProductPhotos\The Indian Garage Co. Men Striped Casual White Shirt .png" />
+    <Content Include="user.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="verify.html" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="OrderSuccess.aspx" />
+    <Content Include="appSettings.secrets.config.example" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReg.aspx.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReg.aspx.designer.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactus.aspx.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactus.aspx.designer.cs">
+      <DependentUpon>Contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filter.aspx.cs">
+      <DependentUpon>Filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filter.aspx.designer.cs">
+      <DependentUpon>Filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IOrderService.cs" />
+    <Compile Include="OrderService.svc.cs">
+      <DependentUpon>OrderService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\COMMIT_EDITMSG" />
+    <Content Include=".git\config" />
+    <Content Include=".git\description" />
+    <Content Include=".git\FETCH_HEAD" />
+    <Content Include=".git\HEAD" />
+    <Content Include=".git\hooks\applypatch-msg.sample" />
+    <Content Include=".git\hooks\commit-msg.sample" />
+    <Content Include=".git\hooks\fsmonitor-watchman.sample" />
+    <Content Include=".git\hooks\post-update.sample" />
+    <Content Include=".git\hooks\pre-applypatch.sample" />
+    <Content Include=".git\hooks\pre-commit.sample" />
+    <Content Include=".git\hooks\pre-merge-commit.sample" />
+    <Content Include=".git\hooks\pre-push.sample" />
+    <Content Include=".git\hooks\pre-rebase.sample" />
+    <Content Include=".git\hooks\pre-receive.sample" />
+    <Content Include=".git\hooks\prepare-commit-msg.sample" />
+    <Content Include=".git\hooks\push-to-checkout.sample" />
+    <Content Include=".git\hooks\sendemail-validate.sample" />
+    <Content Include=".git\hooks\update.sample" />
+    <Content Include=".git\index" />
+    <Content Include=".git\info\exclude" />
+    <Content Include=".git\logs\HEAD" />
+    <Content Include=".git\logs\refs\heads\main" />
+    <Content Include=".git\logs\refs\heads\master" />
+    <Content Include=".git\logs\refs\remotes\origin\main" />
+    <Content Include=".git\objects\03\1f9621af921ff8a7730245dd898ed2ab3f16ed" />
+    <Content Include=".git\objects\0d\34414c85ea52a48d5ba753e58d518b9a309c2d" />
+    <Content Include=".git\objects\10\1b6b408ee1beadb3d5dade413a04f81b59a71d" />
+    <Content Include=".git\objects\12\cdf0b6c90fbb1c2a709b28a3768bf37630e2f2" />
+    <Content Include=".git\objects\17\76db3a4684d72899befe7ae6935960fbe46d24" />
+    <Content Include=".git\objects\20\6770f2f31f9a83921840e4d0898ede247e05f8" />
+    <Content Include=".git\objects\21\7e2edf6f7c26cd008f9cd15cbf8ddc8c248854" />
+    <Content Include=".git\objects\22\ae63b89c0d17630c9d877e43b67c96436cc6cc" />
+    <Content Include=".git\objects\24\c0d2dfdc633e126edaf548020d4255ef2139ed" />
+    <Content Include=".git\objects\27\91670104a7af5955ee2bf77ee4c9b9a53dc3ad" />
+    <Content Include=".git\objects\29\4a9b09dfbf323b8822cad76611a7c78a82f654" />
+    <Content Include=".git\objects\2a\54c4c75b7fd51052e2f66413dbf00d8e613b36" />
+    <Content Include=".git\objects\2c\ae95c94d4fc4d06684d29bee834f08065bc40d" />
+    <Content Include=".git\objects\31\4623299b52d4a34c4d83949b04556c0ba0fbb7" />
+    <Content Include=".git\objects\37\99529b53f4ba43f2be318788fa66df2fadae02" />
+    <Content Include=".git\objects\3a\a3a67a00558b1e712cd44faa22fed771b56d10" />
+    <Content Include=".git\objects\3a\f8a6d5c459f0eb01e63317629ff59ab81f585f" />
+    <Content Include=".git\objects\3b\2ce27d4d1481c7e803cdb30520b38828c3c64b" />
+    <Content Include=".git\objects\3c\90bd63ac7ce8a05b34a7a1927bc14933c739ee" />
+    <Content Include=".git\objects\3d\7bb6c4b1830281193d61cb465861e2a8109b51" />
+    <Content Include=".git\objects\43\8d1c65c55cee58b1f8e8369782de5d221234bb" />
+    <Content Include=".git\objects\43\eba93b2282c2a51787530f859d16011f3e5708" />
+    <Content Include=".git\objects\48\7088d2e302b7faf557ce3e7cf09098c0cee12e" />
+    <Content Include=".git\objects\49\296cfe3731802dc9b06fda014222fff8503713" />
+    <Content Include=".git\objects\4c\a0bf325145816dfc7f8ba34214f989be2bcf99" />
+    <Content Include=".git\objects\4e\b2b937702451eaf4acb6847208a237d3f9adeb" />
+    <Content Include=".git\objects\4e\e905f71f20cbed1b56fc6bc5d34261ed7a8e6c" />
+    <Content Include=".git\objects\50\04e2e68f59f513cd5eaa242e70a4c0f292293c" />
+    <Content Include=".git\objects\50\644ebcec0498820fc283db379f6f70fd28163d" />
+    <Content Include=".git\objects\59\791c1d5b5c3c0fcd93383cc6e8483f00d88833" />
+    <Content Include=".git\objects\5b\ab3751ef123d4b159fa96370e2676ee6e9711e" />
+    <Content Include=".git\objects\5e\4d0b42c432e64391f44cdb655c47cfafedde03" />
+    <Content Include=".git\objects\5e\8500f4ae93aa9e2594a4a81e22efd8e9507c2b" />
+    <Content Include=".git\objects\5e\b12101c9afbdafc5430ee1ffc6aea8bf5fdf14" />
+    <Content Include=".git\objects\61\18ee03454b392de2eaa83f8d5e54e19bc45c65" />
+    <Content Include=".git\objects\61\e05d67b6a69a697de3422fd8b6f1acb51accf8" />
+    <Content Include=".git\objects\66\1cda71d334499d1e5aae302ab0925d862a7b8b" />
+    <Content Include=".git\objects\6d\cc4e90d4fab39df2f549454dc19b73a572da42" />
+    <Content Include=".git\objects\6e\6f812e17aebd5bf6f0fd828a4ad1d82f6da095" />
+    <Content Include=".git\objects\6e\d6bd88670aef291ff0700db9119dff04b35b79" />
+    <Content Include=".git\objects\6f\80f9d89d3fd688bd6b0b77127c685190e45e2c" />
+    <Content Include=".git\objects\71\12879edcc91300c6f409830ee042b096d5a403" />
+    <Content Include=".git\objects\75\4cd095679812d468bf318f22c34b197fb38b50" />
+    <Content Include=".git\objects\75\aa541ece3b8258586736f3e942e1ce7a557037" />
+    <Content Include=".git\objects\76\31852576fb1c4d01ce69800d3c653a57edfc1d" />
+    <Content Include=".git\objects\76\658bc3c8aecee2e6d9623303e0ddba95dd4919" />
+    <Content Include=".git\objects\7d\408e4793f022e71e3cd05526a64c7953baba1a" />
+    <Content Include=".git\objects\80\a911bc239c1970da71ba5f8b2399a6b718ff96" />
+    <Content Include=".git\objects\82\ca53dce2464e9f6beea798ebadb163f5f5fa91" />
+    <Content Include=".git\objects\87\0edb1aeee28d73b0e505d9cd3938ddb8423b39" />
+    <Content Include=".git\objects\8a\9a154a7005a1e3238872299168c35c18242d91" />
+    <Content Include=".git\objects\8f\f4e4da2be97aa086a635c1574226bff6018978" />
+    <Content Include=".git\objects\92\e4f8f87a945aaeeb86ead5f5a1618dfa4d646f" />
+    <Content Include=".git\objects\93\79f4a23b24bdd01fa78c90db32e264106bdc62" />
+    <Content Include=".git\objects\96\37001e2489e72395448f10369a102ea1720529" />
+    <Content Include=".git\objects\98\b8eef93b360b0b515f149b6afe65851a17b39d" />
+    <Content Include=".git\objects\a0\4f720e12dc44b41d88e29ff4903423fba05570" />
+    <Content Include=".git\objects\a0\83fbe43440613475d09334beb6cbe417f788c5" />
+    <Content Include=".git\objects\a5\7985ade8f6549e91792224c95d52b93d97d220" />
+    <Content Include=".git\objects\a6\d14912fccad70e6954ff70b52afed10dc681c0" />
+    <Content Include=".git\objects\a8\4f6660b54db542d798099cf8e64b0a5a8b7e93" />
+    <Content Include=".git\objects\ac\e5bd54d09eb46c3b6be96d3f0e7d98b7af0964" />
+    <Content Include=".git\objects\b3\ddfb4d79d0227be27d4ad3276472a847d50d2b" />
+    <Content Include=".git\objects\b5\2d9e0c708176845595bf0e9dc3f63abc972d2d" />
+    <Content Include=".git\objects\b5\45812c3a09d44799c759732b2727330a957f4f" />
+    <Content Include=".git\objects\b8\a9157f7746e5e7a17319e25199e2b11790af2f" />
+    <Content Include=".git\objects\b9\b236d2d329fde07b39122d6953453f425dd5ed" />
+    <Content Include=".git\objects\bb\46a639d8a509871e48b91d0fa72366b964745c" />
+    <Content Include=".git\objects\be\8d4c8133757b93b34065bd49cbce20b03fc7cc" />
+    <Content Include=".git\objects\c0\79c2794658a65ae5635ac6ba738e0dc48508d2" />
+    <Content Include=".git\objects\c3\3a752a131f3a2b98269078ed358f6e18ade18d" />
+    <Content Include=".git\objects\c4\9502bc2879aa6e9a4dbb7a22ee48e1854ebe25" />
+    <Content Include=".git\objects\c4\c6022f2982e8dae64cebd6b9a2b59f2547faad" />
+    <Content Include=".git\objects\c8\91528d774ba08fe4a48aae2cdd2bcf92389bb4" />
+    <Content Include=".git\objects\c8\be21967f5d8154ea7210bcb59f0ce50a23aa70" />
+    <Content Include=".git\objects\ca\686147bfe8d42e86271b5e41146b98023143e6" />
+    <Content Include=".git\objects\ca\6c63c7f45dc418dd51904db26ae229b6d54c9d" />
+    <Content Include=".git\objects\cc\238f68fd66fde51018ebe1060be23ccb6c8fed" />
+    <Content Include=".git\objects\d4\1e4d1457666c22cfd8dca7c8e40068c2f5cb7d" />
+    <Content Include=".git\objects\dc\a0fc26cabce48aff4884267d4b6618c05f61fb" />
+    <Content Include=".git\objects\dd\91c56e07d2d82fc7a839e1990a5ccb2567e95f" />
+    <Content Include=".git\objects\de\6471030a1af68902b357afec917ab937254cbd" />
+    <Content Include=".git\objects\de\e2bae89882b63f741952fb66f2fa5178e2e0e2" />
+    <Content Include=".git\objects\df\70fabbc100887fa313856ad7a6c2a50d9cc4ea" />
+    <Content Include=".git\objects\e0\5432a7d5734a4e0b9b23b5549734789620045d" />
+    <Content Include=".git\objects\e2\f89c4ea9048652f74f563f2eea919af69d989b" />
+    <Content Include=".git\objects\f0\66d40a5572bb2ddf2d651d6647f36e4d26e94c" />
+    <Content Include=".git\objects\f3\cb664885da9cbb5631241904b354f396ec28f7" />
+    <Content Include=".git\objects\f6\3e37c15df377304e2c3609cadb7883c4b339ff" />
+    <Content Include=".git\objects\fa\eb8fb3eb114fac2adb97eb49622482a2a563b7" />
+    <Content Include=".git\objects\fb\bffc53407258192a266e7f682f7deab5833c24" />
+    <Content Include=".git\objects\fd\a8c2e23b0d376bf096d2a65c17f9ec62017418" />
+    <Content Include=".git\refs\heads\main" />
+    <Content Include=".git\refs\heads\master" />
+    <Content Include=".git\refs\remotes\origin\main" />
+    <Content Include="MasterPage.Master" />
+    <None Include="packages.config" />
+    <Content Include="ProductPhotos\manifest.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrderSuccess.aspx.cs">
+      <DependentUpon>OrderSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderSuccess.aspx.designer.cs">
+      <DependentUpon>OrderSuccess.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="Phs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59169</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59169/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
